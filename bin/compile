@@ -3,6 +3,7 @@
 set -e
 
 BUILD_DIR=$1
+echo "----> Build directory is ${BUILD_DIR}"
 BP_DIR=$(cd $(dirname ${0:-}); cd ..; pwd)
 
 ZIP_FILE_NAME="xmlsec1-1.2-cedar14.tgz"
