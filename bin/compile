@@ -13,7 +13,7 @@ DOWNLOAD_URL="https://s3.amazonaws.com/handshake-public/${ZIP_FILE_NAME}"
 # Create the install directory
 
 INSTALL_PATH="${BUILD_DIR}/vendor/xmlsec1"
-
+echo "----> INSTALL_PATH: ${INSTALL_PATH}"
 mkdir -p $INSTALL_PATH
 
 # Download the archive
