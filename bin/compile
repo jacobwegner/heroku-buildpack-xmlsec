@@ -51,8 +51,8 @@ echo "-----> Exporting for the next buildpack..."
 
 echo 'export PATH="$PATH:vendor/xmlsec1/bin"' > $BP_DIR/export
 echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:vendor/xmlsec1/lib"' >> $BP_DIR/export
-echo "export LIBXMLSEC1=${INSTALL_PATH}" >> $BP_DIR/export
-echo "export CFLAGS=\"-I${INSTALL_PATH}/include/xmlsec1\"" >> $BP_DIR/export
+echo "export LIBXMLSEC1=/app/vendor/xmlsec1" >> $BP_DIR/export
+echo "export CFLAGS=\"-I/app/vendor/xmlsec1/include/xmlsec1\"" >> $BP_DIR/export
 
 echo "-----> PATH:${PATH}"
 echo "-----> LD_LIBRARY_PATH:${LD_LIBRARY_PATH}"
